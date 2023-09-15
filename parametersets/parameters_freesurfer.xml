@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rap>
+
+    <directoryconventions>
+        <freesurferdir desc="Path to freesurfer" ui="dir"></freesurferdir>
+        <freesurfersetup desc="Path to FreeSurfer setup script, executing before any FreeSurfer environmental setup" ui="text"></freesurfersetup>
+        <freesurferenvironment desc="Path to FreeSurfer environmental setup script, executing before any FreeSurfer command" ui="text"></freesurferenvironment>
+        <freesurferoutputformat desc="Output type used by FreeSurfer (GZs are not supported by SPM)" ui="text">nii</freesurferoutputformat>
+    </directoryconventions>
+
+</rap>    
