@@ -1,5 +1,4 @@
 function [s, w] = runFreesurferCommand(rap,cmd,ENV,varargin)
-
 % Setup
 setupCmd = '';
 setupStr = deblank(rap.directoryconventions.freesurfersetup);
