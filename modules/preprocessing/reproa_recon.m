@@ -13,7 +13,7 @@ switch command
 
         % Clean for all
         if strcmp(getSetting(rap,'workflow'),'all')
-%            cellfun(@(d) dirRemove(fullfile(localPath,d)), FSDERIV)
+            cellfun(@(d) dirRemove(fullfile(localPath,d)), FSDERIV)
         end
 
         % Delete freesurfer running flags if exists
@@ -42,7 +42,7 @@ switch command
 
         % Run
         fsCmd = ['recon-all -subjid ' subjname ' ' inputStr ' -'  getSetting(rap,'workflow')];
-%        [s, w] = runFreesurferCommand(rap,fsCmd);
+        [s, w] = runFreesurferCommand(rap,fsCmd);
 
         % Output
         % - specific FreesSrfer dirs into specific substream
