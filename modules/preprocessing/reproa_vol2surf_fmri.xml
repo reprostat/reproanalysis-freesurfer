@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rap>
+    <header mfile="reproa_vol2surf" domain="fmrirun" desc="Project volume to surface reconstruction" modality="FMRI"/>
+
+    <hpc>
+        <timeBase>0.5</timeBase>
+        <memoryBase>2</memoryBase>
+    </hpc>
+
+    <permanenceofoutput>2</permanenceofoutput>
+
+    <settings>
+        <outputtype options="nifti|gifti|cifti" ui="optionlist">gifti</outputtype>
+    </settings>
+
+    <inputstreams>
+        <stream domain="subject" tobemodified="0">recon</stream>
+        <stream domain="fmrirun" tobemodified="1" isrenameable="1" isessential="0">fmri_header</stream>
+        <stream domain="fmrirun" tobemodified="1" isrenameable="1">fmri</stream>
+    </inputstreams>
+
+    <outputstreams>
+        <stream domain="fmrirun" isrenameable="1">fmri</stream>
+        <stream domain="fmrirun" isrenameable="1" isessential="0">fmri_header</stream>
+    </outputstreams>
+</rap>
