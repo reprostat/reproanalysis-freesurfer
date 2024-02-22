@@ -1,2 +1,5 @@
-# reproanalysis-?
-Reproanalysis Extension for integrating ?
+# reproanalysis-freesurfer
+Reproanalysis Extension for integrating FreeSurfer
+
+## Requirements
+- [FreeSurfer](https://surfer.nmr.mgh.harvard.edu)
