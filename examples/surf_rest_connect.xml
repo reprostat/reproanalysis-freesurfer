@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rap>
+    <module><name>reproa_segment</name></module>
+    <module><name>reproa_recon</name></module>
+    <module><name>reproa_vol2surf_fmri</name></module>
+</rap>
