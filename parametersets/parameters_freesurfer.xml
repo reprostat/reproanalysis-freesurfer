@@ -2,10 +2,17 @@
 <rap>
 
     <directoryconventions>
+        <toolbox desc="Toolbox with implemented interface in extrafunctions/toolboxes" ui="custom">
+            <name desc="Name corresponding to the name of the interface without the &quot;Class&quot; suffix" ui="text">niwf</name>
+            <dir ui="dir_list"></dir>
+            <extraparameters ignorecheck='1'>
+                <condaEnvironment>niworkflows</condaEnvironment>
+            </extraparameters>
+        </toolbox>
         <freesurferdir desc="Path to freesurfer" ui="dir"></freesurferdir>
         <freesurfersetup desc="Path to FreeSurfer setup script, executing before any FreeSurfer environmental setup" ui="text"></freesurfersetup>
         <freesurferenvironment desc="Path to FreeSurfer environmental setup script, executing before any FreeSurfer command" ui="text"></freesurferenvironment>
         <freesurferoutputformat desc="Output type used by FreeSurfer (GZs are not supported by SPM)" ui="text">nii</freesurferoutputformat>
     </directoryconventions>
 
-</rap>    
+</rap>
